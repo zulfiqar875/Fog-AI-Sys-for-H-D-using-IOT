@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 use Illuminate\Http\Request;
+use Session;
 // use Request;
 use GuzzleHttp\Client;
 use App\Patient;
@@ -63,6 +64,8 @@ class ClientController extends Controller
         $User->Username = $req->username;
         $User->Password = $req->password;
         $User->save();
+        // Session::flash('register','Thanks for Joining us!');
+        alert()->success('Successfully you are Register');
         return view ('fornt.login');
     }
     //

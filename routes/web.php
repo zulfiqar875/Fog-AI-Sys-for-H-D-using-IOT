@@ -14,12 +14,12 @@
 Route::get('/userrecord','ClientController@userdata');
 Route::get('/graphdata','ClientController@graphdata');
 Route::get('/','ClientController@start');
-Route::post('/test','ClientController@test');
+Route::post('/register','ClientController@test');
 Route::get('/working','ClientController@working');
 Route::get('/login','ClientController@login');
 
 Route::get('/Signup','ClientController@signup');
-Route::get('/Auth','ClientController@Authen');
+Route::post('/Auth','ClientController@Authen');
 Route::post('/Clientdata/{data}','ClientController@AddClientData');
 // Route::post('/useradd','ClientController@register');
 

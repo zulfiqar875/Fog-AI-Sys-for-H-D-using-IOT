@@ -164,6 +164,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         ConsoleTVs\Charts\ChartsServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+
         // Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         // Barryvdh\Cors\ServiceProvider::class,
 
@@ -234,6 +236,7 @@ return [
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
         'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
         'Charts' => ConsoleTVs\Charts\Charts::class,
+        'Alert' => UxWeb\SweetAlert\SweetAlert::class,
 
     ],
 

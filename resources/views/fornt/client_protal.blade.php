@@ -143,6 +143,15 @@ th, td { padding: 8px 16px; }
 th     { background:rgb(1, 1, 1,0.7); }
 
 
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Footer */
+
+.footer
+{
+  font-family: Sans-serif	;
+}
+
+
 </style>
 
 <body>
@@ -362,6 +371,34 @@ th     { background:rgb(1, 1, 1,0.7); }
             </table>
             </div>
         </div>
+    </div>
+
+    <div class="footer mt-5 pt-5 pb-5 bg-dark">
+      <div class=" " style="display: flex; flex-wrap: wrap; ">
+          <div class="col-md-3 col-lg-3 col-xl-3 pl-5  text-white">
+              <h4 class="mb-4">Our Products</h1>
+              <h6 class="mb-4">Glucose Watch</h3>
+              <h6 class="mb-4">Blood Pressure Watch</h3>
+              <h6 class="mb-4">Support</h3>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 pl-5  text-white">
+              <h4 class="mb-4">Discover vitality</h1>
+              <h6 class="mb-4">Blog</h3>
+              <h6 class="mb-4">About</h3>
+              <h6 class="mb-4">Scientific committee</h3>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 pl-5  text-white">
+              <h4 class="mb-4">Contact us</h1>
+              <h6 class="mb-4">Ask a question</h3>
+              <h6 class="mb-4">Press</h3>
+              <h6 class="mb-4">Privacy and policy</h3>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 pl-5  text-white">
+            <h4 class="mb-4">Join us</h4>
+            <i class="fab fa-facebook-square fa-2x pl-1"></i> <i class="fab fa-twitter-square fa-2x pl-1"></i>
+            <i class="fab fa-instagram fa-2x pl-1"></i> <i class="fab fa-linkedin fa-2x pl-1"></i>
+          </div>
+      </div>
     </div>
 </body>
 

@@ -10,7 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>HC-Login</title>
+    <link rel="icon" type="image/ico" href="https://i.pinimg.com/originals/16/aa/df/16aadf06716be2bb9c958b31ee1173a1.jpg" />
 </head>
 <style>
     body
@@ -31,6 +33,7 @@
     .containter
     {
         background-color: rgba(255, 255, 255, 0.110);
+        /* background-color: black; */
         border-radius: 30px;
         margin-top: 40px;
         width: 400px;
@@ -74,6 +77,11 @@
     .LB:hover
     {
         color: blue;
+    }
+
+    .logo
+    {
+      width: 100px;
     }
 
 
@@ -6414,7 +6422,14 @@ body {
 }
 
 </style>
+
+<!-- @if(Session::has('register'))
+  <script>
+    swal("Good job!", "Thanks for Joining us!", "success");
+  </script>
+@endif -->
 <body>
+@include('sweet::alert')
 
 <div class="box">
 <div class='wrap'>
@@ -6722,11 +6737,12 @@ body {
     <div class="containter ">
     <a href="/working" class="text-left"><i class="fa fa-home text-white "> </i></a><h1 style="text-align: center; margin-bottom: 10px; color: white; font-family: geneva; font-size: 50px;">Welcome</h1>
         <div class="text-center mb-4">
-            <i class="fa fa-heartbeat fa-4x text-danger" aria-hidden="true"></i>
+            <!-- <i class="fa fa-heartbeat fa-4x text-danger" aria-hidden="true"></i> -->
+            <img class="logo" src="https://i.pinimg.com/originals/16/aa/df/16aadf06716be2bb9c958b31ee1173a1.jpg" alt="" srcset="">
             <h6 class="text-white">HEATHCHAIN</h5>
         </div>
         <div class="form-group">
-            <form action="/Auth" method="get">
+            <form action="/Auth" method="POST">
             @csrf
                 <div class="row">
                     <div class="col-12">
@@ -6755,6 +6771,9 @@ body {
         </div>
     </div>
 </div>
+
+
+
 
 </body>
 </html>
